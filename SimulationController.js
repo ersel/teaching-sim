@@ -5631,7 +5631,7 @@ System.register([], function () {
 
 			    //! moment.js
 
-			    hooks.version = '2.27.0';
+			    hooks.version = '2.26.0';
 
 			    setHookCallback(createLocal);
 
@@ -5779,10 +5779,10 @@ System.register([], function () {
 			    const coreStart = coreWeeks[0].firstTeachingDay.format("dddd, MMMM Do YYYY");
 			    const coreEnd = coreWeeks[coreWeeks.length - 1].secondTeachingDay.format("dddd, MMMM Do YYYY");
 			    const backendWeeks = this.getBackendWeeks();
-			    const backendStart = backendWeeks[0].firstTeachingDay.format("dddd, MMMM Do YYYY");
+			    const backendStart = backendWeeks[1].firstTeachingDay.format("dddd, MMMM Do YYYY");
 			    const backendEnd = backendWeeks[backendWeeks.length - 1].secondTeachingDay.format("dddd, MMMM Do YYYY");
 			    const frontendWeeks = this.getFrontendWeeks();
-			    const frontendStart = frontendWeeks[0].firstTeachingDay.format("dddd, MMMM Do YYYY");
+			    const frontendStart = frontendWeeks[1].firstTeachingDay.format("dddd, MMMM Do YYYY");
 			    const frontendEnd = frontendWeeks[frontendWeeks.length - 1].secondTeachingDay.format("dddd, MMMM Do YYYY");
 			    out.push(`${cohortName} - CORE: ${coreStart} - ${coreEnd}`);
 			    out.push(`${cohortName} - BACKEND: ${backendStart} - ${backendEnd}`);
